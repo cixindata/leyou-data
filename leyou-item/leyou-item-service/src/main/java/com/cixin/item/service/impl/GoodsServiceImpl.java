@@ -31,4 +31,14 @@ public class GoodsServiceImpl implements CategoryService {
         List<Category>categoryList=categoryMapper.select(category);
         return categoryList;
     }
+
+    /**
+     * 查询数据库中最后一条记录
+     * @return
+     */
+    @Override
+    public List<Category>queryLast(){
+        List<Category>last=categoryMapper.selectLast();
+        return last;
+    }
 }

@@ -8,6 +8,10 @@ import java.util.List;
  * 分类业务场景
  */
 public interface  CategoryService{
+
+
     List<Category>queryCategoryByPid(Long pid);
+
+    List<Category>queryLast();
 
 }
